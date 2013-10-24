@@ -5,7 +5,7 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
 	var data = fs.readFileSync('particle.html').toString();
-      	response.send(data);
+	response.send(data); // data is a string that contains the HTML data for index.html
     });
 
 var port = process.env.PORT || 5000;
