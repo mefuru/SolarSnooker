@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset="utf-8">
+		<title> Psychedelic Snooker </title>
+		<meta name="description" content="Psychedelic Snooker">
+	</head>
+	<body>
+		<script>
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_get.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_go.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_h.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_horizontal.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_key.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_lightning.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_link.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_magnify.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_medal.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_office.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_paint.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_paintbrush.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_paste.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_php.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_picture.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_powerpoint.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_put.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_ruby.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_stack.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_star.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_swoosh.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_text.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_text_width.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_tux.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_vector.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_visualstudio.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_width.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_word.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_world.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_wrench.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_white_zip.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_word.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/icons/page_world.png
+ create mode 100644 node_modules/express/node_modules/connect/lib/public/style.css
+ create mode 100644 node_modules/express/node_modules/connect/lib/utils.js
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/buffer-crc32/.npmignore
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/buffer-crc32/.travis.yml
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/buffer-crc32/README.md
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/buffer-crc32/index.js
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/buffer-crc32/package.json
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/buffer-crc32/tests/crc.test.js
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/bytes/.npmignore
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/bytes/History.md
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/bytes/Makefile
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/bytes/Readme.md
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/bytes/component.json
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/bytes/index.js
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/bytes/package.json
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/formidable/.npmignore
+ create mode 100644 node_modules/express/node_modules/connect/ules/express/node_modules/connect/node_modules/formidable/TODO
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/formidable/benchmark/bench-multipart-parser.js
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/formidable/example/post.js
+ create m 100644 node_module/express/node_modules/connect/node_modules/formidable/node-gently/test/common.js
+ create mode 100644 node_modules/express/node_mod.js
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/multipart.js
+ create mode 100644 node_modss/node_modules/connect/node_modules/formidable/test/legacy/system/test-multi-video-upload.js
+ create mode 100755 node_modules/express/node_modules/connect/node_modules/fode_modules/qs/.gitmodules
+ create mode 100644 node_modules/express/node_modules/connect/node_modules/qs/.npmignore
+ create mode 100644 node_module mode 100644 node_modules/express/node_modules/connect/node_modules/qs/lib/tail.js
+ create mode 100644 node_modnect/node_modules/qs/testde_modules/cookie/index.js
+ create mode 100644 node_modules/express/node_modules/cookie/package.json
+ create mode 100644 node_modules/express/node_modules/cookieode_modules/express/node_modules/debug/index.js
+ create mode 100644 node_modules/express/node_modules/debug/lib/debug.js
+ create mode 100644 node_modules/express/node_modules/node_modules/mkdirp/index.js
+ create mode 100644 node_modules/express/node_modules/mkdirp/package.json
+ create mode 100644 ne 100644 node_modules/express/node_modules/mkdirp/test/umask.js
+ create mode 100644 node_modules/express/node_modules/mkdirp/test/umask_sync.js
+ create mode 100644 node_m----------------------------------------------------------
+ create mode 100644 node_modules/n
+ create mode 100644 node_modage.jsonweb.js
+Mehuls-MacBook-Air:herokuApp mehulmandania$ emacs .gitignore
+Mehuls-MacBook-Air:herokuApp mehulmandania$ heroku creaname> <branch>...
+   or: git remote set-url <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>json node-example@0.0.1 No readme data.
+       npm WARN package.json cookie-signature@1.0.0 No repository field.
+       npm WARN package.json fresh@0.1.0 No repository field.
+       npm WARN packa      npm WARN package.json bytes@0.2.0 No repository field.
+       npm WARN package.json formidable@1.0.11 No repository field.
+ s/cookie
+       send@0.1.0 /tmp/build_717cbc48-7c02-4pause
+       commander@0.6.1 $ cp -rf ../firstgame/ ./
+Mehuls-MacBook-Air:herokuApp mehulmandania$ ls
+				  ..DS_Store.gitignoreSolarSystemSnookerpackage.json
+				  ...gitProcfilenode_modulesw...gitProcfilenode_modulesweb.js
+Mehuls-MacBook-Air:herokuApp mehulmandania$ cp -rf ../firstgame/SolarSystemSnooker/particle.html ./
+Mehuls-MacBook-Air:herokuApp mehu----------------------
+				  ...game_v1.js
+Mehuls-MacBook-Air:js mehulmandania$ cd ..
+Mehuls-MacBook-Air:herokuApp mehulmandania$ rm game_v1.js
+remove game_v1.js? ls
+Mehuls-MacBook-Air:herokuApp mehfiles changed, 329 insertions(+), 1 deletion(-)
+ create mode 100644 .DS_Store
+ create mode 100644 .gitignore
+ create mode 100644 js/game_v1.js
+ create mode 100644 particle.html
+ta 
+       npm WARN package.json pause@0.0.1 No repository field.
+       npm WARN package.json node-example@0.0.1 No repository field.
+       npm WARN package.json node-example@0.0.1 No readme data.node_modules/qs
+       formidable@1.0.11 /tmp/build_d7042e7d-33e5-45ec-9ae0-f3412d025ee0/node_modules/express/node_modules/connect/node_modules/formidable
+       cookie-signature@1.03e5-45ec-9ae0-f3412d025ee0/node_modules/express/node_modules/range-parser
+       bytes@0.2.0 /tmp/build_d7042e7dokuapp.com deployed to Heroku
+
+To git@heroku.com:shrouded-island-2417.git
+   18d93da..2766c5d  master -> master
+Mehuls-MacBook-Air:helmandania$ cd ..
+Mehuls-MacBook-Air:herokuApp mehulmandania$ git commit -am "Added JS game file"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				  ----:---F1  *scratch*      le.htmlweb.js~
+				  ...git.gitig--------------------------------------------
+
+Options:
+  -f, [--procfile=PROCFILE]  # Default: Procfile
+  -d, [--root=ROOT]          # Default: Procfile directory
+
+
+
+
+
+
+ntel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.69 Safari/537.36"
+23:43:52 web.1  | 127.0.0.1 - - [Thu, 24 Oct 2013 03:43:52 GMT] "GET /js/game_vnia$ ls
+				  #.gitignore#...gitignoreMongoDBRapGeniusClientmodulespackage.jsonutils
+				  ..gitLICENSEREADME.mdlyricsGamenode_modulesscrapeArtist.js
+Mehuls-MacBome/30.0.1599.69 Safari/537.36"
+23:49:36 web.1  | 127.0.0.1 - - [Thu, 24 Oct 2013 03:49:36 GMT] "GET / HTTP/1.1" 200 238 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/53c OS X 10_8e_v1.js ./game_v1.js
+-bash: cd: ./js/game_v1.js: Not a directory
+Mehuls-MacBook-Air:herokuApp mehulmandania$ cp ./js/game_v1.js ./game_v127.0.0.1 - - [Thu, 24 Oct 2013 03:50:59 GMT] "GET /game_v1.js HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.zilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.69 Safari/537.36"
+23:51:02 web.1  | 127.0.0.1 - - [Thu,indow.requestAnimFrame = (function(callback) {
+        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || 
+</script>
+	</body>
+</html>
