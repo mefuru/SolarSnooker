@@ -2,8 +2,9 @@ var express = require("express");
 var fs = require("fs");
 var app = express();
 app.use(express.logger());
-
+var foo = 'foo';
 app.use(express.static(__dirname + '/public'));
+
 
 app.get('/', function(request, response) {
 	var data = fs.readFileSync('particle.html').toString();
