@@ -1,6 +1,6 @@
-/*jshint strict: false, devel: true, node:true*/
+// http://www.html5canvastutorials.com/advanced/html5-canvas-animation-stage/
+// https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame
 
-// Psychedellic snooker
 window.requestAnimFrame = (function(callback) {
 	return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
     function(callback) {
@@ -8,16 +8,13 @@ window.requestAnimFrame = (function(callback) {
     };
 })();
 
-// https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame
-// http://www.html5canvastutorials.com/advanced/html5-canvas-animation-stage/
-
 // Initialise variables
 var canvas = document.createElement("canvas");
 canvas.width = 888;
 canvas.height = 500;
 document.body.appendChild(canvas);
 var ctx = canvas.getContext("2d"),
-    ballSize = 20,
+    ballSize = 12,
     cueBallSides = 3,
     colourBallSides = 5,
     orbitRadius = 142,
@@ -54,6 +51,7 @@ var ctx = canvas.getContext("2d"),
     // score tracking variables
     currentBreak = [],
     currentBreakScore = 0,
+    highestBreak = 0,
     rotationAngle2,
     rotationSpeed = 20000,
     totalScore = 0;
@@ -116,6 +114,7 @@ var checkForCollisions = function() {
       if(checkValidity(ball)) {
         currentBreakScore = currentBreakScore + balls[ball].pointsValue;
         totalScore = totalScore + balls[ball].pointsValue;
+        currentBreakScore > highestBreak ? highestBreak = currentBreakScore : null;
         currentBreak.push(balls[ball]);
         if (balls[ball].colour == "red") {
           delete balls[ball];
@@ -137,7 +136,7 @@ var checkForCollisions = function() {
       } else {
         currentBreakScore = 0;
         totalScore = totalScore - penalty[balls[ball].colour];
-        currentBreak.length = 0; // reset current break
+        currentBreak.length = 0; // reset current break arr
         balls[ball].resetPosition();
       }
     }
@@ -227,6 +226,7 @@ var drawScores = function() {
   ctx.fillText("Score: " + totalScore, 50, 75);
   ctx.fillText("Current Break: " + currentBreakScore, 50, 100);
   ctx.fillText("Max pos score 147", 50, 125);
+  ctx.fillText("Highest break: " + highestBreak, 50, 150);
 };
 
 var drawPolygon = function(x, y, fillStyle, radius, sides, startAngle, anticlockwise) {
@@ -292,10 +292,19 @@ var animate = function () {
   updateRotationAngles();
   checkForCollisions();
   ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
-  draw(); // Draw
-  window.requestAnimFrame(function() { // Request new frame
-    animate();
-  });
+    if (Object.keys(balls).length!=0) {
+        draw(); // Draw
+        window.requestAnimFrame(function() { // Request new frame
+            animate();
+        });
+    } else {
+        // game complete screen
+        // time taken
+        ctx.fillText("It took you " + Math.floor((Date.now() - then) / 1000) + " seconds to complete the game", 50, 50);
+        // Show time, biggest break, score
+        ctx.fillText("HIGHEST SCORE: " + highestBreak, 50, 75);
+        ctx.fillText("TOTAL SCORE: " + totalScore, 50, 100);
+    }
 };
 
 createBalls();
